@@ -53,14 +53,28 @@ public class VanGogh extends PApplet {
     /*
      * Write your code below
      */
+    PImage[] image;
+    int imageIndex;
     Brush brush;
     
     void initializePaintings() {
+        image = new PImage[5];
+        image[0] = loadImage("starryNight.jpg");
+        image[1] = loadImage("strawHatPortrait.jpg");
+        image[2] = loadImage("wheatField.jpg");
+        image[3] = loadImage("painterOnRoad.jpg");
+        image[4] = loadImage("oneMoldy.jpg");
+        imageIndex = 1;
+        brush.setNewPainting(image[imageIndex]);
         
     }
     
     void selectNextPainting() {
-        
+        imageIndex++;
+    	if (imageIndex > 4) {
+			imageIndex = 0;
+		}
+    	brush.setNewPainting(image[imageIndex]);
     }
 
     @Override

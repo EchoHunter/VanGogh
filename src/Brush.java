@@ -13,7 +13,7 @@ public class Brush {
      * Brush settings
      */
     static int DEFAULT_MAX_BRUSH_THICKNESS = 20;
-    static int DEFAULT_NUM_BRISTLES = 200;
+    static int DEFAULT_NUM_BRISTLES = 500;
     static int DEFAULT_BRUSH_SIZE = 40;
     static int DEFAULT_BRUSH_STAGGER = 6;
     
